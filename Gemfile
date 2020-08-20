@@ -22,6 +22,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# provides Ruby and Ruby on Rails integration with this JavaScript tool
+gem 'autoprefixer-rails'
+# use font-awesome-sass
+gem 'font-awesome-sass', '~> 5.12.0'
+# use simpleform
+gem 'simple_form'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
