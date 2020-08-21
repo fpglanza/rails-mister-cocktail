@@ -1,9 +1,27 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
-<div>
-<ul>
+<div style="display: flex; flex-direction: column; flex: center;">
+<div class="banner" style="linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))">
+  <div class="container">
+    <h1>Mister Cocktail Slinger</h1>
+    <p>List and manage your amazing cocktails. Live the bartender dream!</p>
+    <center><%= link_to 'Mix', new_cocktail_path %></center>
+  </div>
+</div>
+
+<div class="cards">
 <% @cocktails.each  do |cocktail|%>
-<li><%= link_to cocktail.name.titleize, cocktail_path(cocktail) %></li>
+<div class="card-product">
+  <%= cl_image_tag cocktail.photo.key %>
+  <div class="card-product-infos">
+    <h2> <%= link_to cocktail.name.titleize, cocktail_path(cocktail) %> </h2>
+    <p> <% cocktail.ingredients.each do |ingredient| %>
+    <%= ingredient.name %>
+    <% end %>
+     <% cocktail.doses.each do |dose| %>
+    <%= dose.description %> </p>
+     <% end %>
+  </div>
+</div>
 <% end %>
-</ul>
-<%= link_to 'Add Cocktail', new_cocktail_path %>
+</div>
+</div></center>
+

@@ -110,10 +110,3 @@ Ingredient.create(name: "Blackberry brandy")
 Ingredient.create(name: "Peppermint schnapps")
 Ingredient.create(name: "Creme de Cassis")
 Ingredient.create(name: "Jack Daniels")
-
-Cocktail.create(name: "whiskey sour")
-Cocktail.create(name: "gin & tonic")
-Cocktail.create(name: "long island ice tea")
-Cocktail.create(name: "white russian")
-Cocktail.create(name: "basil smash")
-
